@@ -189,11 +189,11 @@ local function QUYNCZE_fake_script()
 			subbtn.Text = "Code Correct!"
 			wait(1)
 			frame:TweenPosition(UDim2.new(1,0,0,0),"Out","Linear")
-			script.Parent.Parent.Parent.Frame.Visible = false
+			script.Parent.Parent.Parent.Frame.Visible = false -- you can change "Frame" that you want to open when you enter the key correctly.
 			
 		else
 			subbtn.Text = "Code Incorrect!"
-			passbox.Text = ""
+			passbox.Text = "" -- ingore this message, this is not required.
 			wait(2)
 			subbtn.Text = "submit"
 		end
